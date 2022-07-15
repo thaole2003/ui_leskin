@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="flex p-2  ">
+
+        <section class="container mx-auto   flex justify-between">
+            <img src="http://leskin.devmaster.vn/img/logo.png" alt="" class="w-[72px] h-[52px] my-6 md:my-0">
+            <div class="w-[340px] h-[40px] hidden md:flex ">
+                <input type="search" class="w-4/5 border border-solid
+                        border-orange-300 rounded-tl-2xl rounded-bl-2xl " placeholder="Tìm Kiếm ...">
+                <button class="bg-orange-300 w-1/5 rounded-tr-2xl flex
+                        rounded-br-2xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5
+                            text-white justify-items-center justify-center text-center"
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0
+                                000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0
+                                01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                clip-rule="evenodd" />
+                            </svg>
+                        </button>
+            </div>
+            <nav class="md:flex gap-5 text-center justify-center list-none hidden">
+                <li class="text-center ">
+                    <a href="#" class="grid justify-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 justify-items-center" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7
+                                        7a1 1 0 001.414 1.414L4 10.414V17a1 1 0
+                                        001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1
+                                        0 011 1v2a1 1 0 001 1h2a1 1 0
+                                        001-1v-6.586l.293.293a1 1 0
+                                        001.414-1.414l-7-7z" />
+                                    </svg>
+                        <p>Trang chủ</p>
+                    </a>
+                </li>
+                <li><a href="#" class="grid justify-items-center"><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6" fill="none" viewBox="0 0
+                                        24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round" d="M13
+                                            16h-1v-4h-1m1-4h.01M21 12a9 9 0
+                                            11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <p>Giới thiệu</p></a></li>
+                <li>
+                    <a href="#" class="grid justify-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round"
+                                                stroke-linejoin="round" d="M12
+                                                8v13m0-13V6a2 2 0 112 2h-2zm0
+                                                0V5.5A2.5 2.5 0 109.5 8H12zm-7
+                                                4h14M5 12a2 2 0 110-4h14a2 2 0
+                                                110 4M5 12v7a2 2 0 002 2h10a2 2
+                                                0 002-2v-7" />
+                                            </svg>
+                        <p>Sản phẩm dịch vụ</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="grid justify-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    d="M11 5.882V19.24a1.76 1.76
+                                                    0
+                                                    01-3.417.592l-2.147-6.15M18
+                                                    13a3 3 0 100-6M5.436
+                                                    13.683A4.001 4.001 0 017
+                                                    6h1.832c4.1 0 7.625-1.234
+                                                    9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988
+                                                    3.988 0 01-1.564-.317z" />
+                                                </svg>
+                        <p>Tin tức</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="grid justify-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                    <path stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        d="M3 8l7.89 5.26a2 2 0
+                                                        002.22 0L21 8M5 19h14a2
+                                                        2 0 002-2V7a2 2 0
+                                                        00-2-2H5a2 2 0 00-2
+                                                        2v10a2 2 0 002 2z" />
+                                                    </svg>
+                        <p>Liên hệ</p>
+                    </a>
+                </li>
+            </nav>
+            <button class="md:flex hidden bg-white w-[155px] justify-items-center  h-[40px] rounded-2xl " onclick="">
+                <img                               src="http://leskin.devmaster.vn/img/avt-demo2.png"
+                                                alt="">
+                                            <p>Use Name</p>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="h-6 w-6" fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <path stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    d="M19 9l-7 7-7-7" />
+                                                </svg>
+                                            </button>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:hidden block m-8" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                                              </svg>
+        </section>
+
+    </header>
+    <div class="w-full "><img src="http://leskin.devmaster.vn/img/banner-slider.jpg" class="w-full" alt=""></div>
+    <div class="grid container mx-auto">
+        <section class="gap-5 md:flex grid grid-cols-2 justify-items-center
+                                            justify-center pt-9">
+            <div id="hover" class="flex p-4 hover:border hover:rounded-xl
+                                                border-solid w-1/5
+                                                justify-center
+                                                gap-3">
+                <img src="http://leskin.devmaster.vn/img/icon/home-icon-1.png" class="md:min-h-[54px]  md:min-w-[50px] min-h-[100px] min-w-[100px] md:w-auto min-w-" alt="">
+                <div class="md:grid hidden">
+                    <p>
+                        HOÀN TIỀN TỚI
+                    </p>
+                    <p>
+                        15% VÀO VÍ
+                    </p>
+                </div>
+            </div>
+            <div class="flex p-4 hover:border hover:rounded-xl
+                                                border-solid w-1/5
+                                                justify-center
+                                                gap-3">
+                <img src="http://leskin.devmaster.vn/img/icon/home-icon-2.png" class="md:min-h-[54px] md:min-w-[50px] min-h-[100px] min-w-[100px]  md:w-auto w-full" alt="">
+                <div class="md:grid hidden">
+                    <p>
+                        50+ ƯU ĐÃI
+                    </p>
+                    <p>
+                        MỖI THÁNG
+                    </p>
+                </div>
+            </div>
+            <div class="flex p-4 hover:border hover:rounded-xl
+                                                border-solid w-1/5
+                                                justify-center
+                                                gap-3">
+                <img src="http://leskin.devmaster.vn/img/icon/home-icon-3.png" class="md:min-h-[54px] md:min-w-[50px] min-h-[100px] min-w-[100px]  md:w-auto w-full" alt="">
+                <div class="md:grid hidden">
+                    <p>
+                        ĐẶT DỊCH VỤ
+                    </p>
+                    <p>
+                        NHANH CHÓNG
+                    </p>
+                </div>
+            </div>
+            <div class="flex p-4 hover:border hover:rounded-xl
+                                                border-solid w-1/5
+                                                justify-center
+                                                gap-3">
+                <div class="icon">
+                    <img src="http://leskin.devmaster.vn/img/icon/home-icon-4.png" class="md:min-h-[54px] md:min-w-[50px] min-h-[100px] min-w-[100px]  md:w-auto " alt="">
+                </div>
+                <div class="md:grid hidden">
+                    <p>
+                        HƠN 22
+                    </p>
+                    <p>
+                        THƯƠNG HIỆU
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="gap-5 md:flex grid grid-cols-2 pb-6 justify-items-center
+                                            justify-center pt-9">
+            <div class="flex p-4 hover:border hover:rounded-xl
+                                                border-solid w-1/5
+                                                justify-center
+                                                gap-3">
+                <img src="http://leskin.devmaster.vn/img/icon/home-icon-5.png" class="md:min-h-[54px] md:min-w-[50px] min-h-[100px] min-w-[100px]  md:w-auto w-full" alt="">
+                <div class="md:grid hidden">
+                    <p>
+                        HƠN 300+
+                    </p>
+                    <p>
+                        SPA LÀM ĐẸP
+                    </p>
+                </div>
+            </div>
+            <div class="flex p-4 hover:border hover:rounded-xl
+                                                border-solid w-1/5
+                                                justify-center
+                                                gap-3">
+                <img src="http://leskin.devmaster.vn/img/icon/home-icon-6.png" class="md:min-h-[54px] md:min-w-[50px] min-h-[100px] min-w-[100px]  md:w-auto w-full" alt="">
+                <div class="md:grid hidden">
+                    <p>
+                        HƠN 250+
+                    </p>
+                    <p>
+                        ĐỐI TÁC
+                    </p>
+                </div>
+            </div>
+            <div class="flex p-4 hover:border hover:rounded-xl
+                                                border-solid w-1/5
+                                                justify-center
+                                                gap-3">
+                <img src="http://leskin.devmaster.vn/img/icon/home-icon-7.png" class="md:min-h-[54px] md:min-w-[50px] min-h-[100px] min-w-[100px]  md:w-auto w-full" alt="">
+                <div class="md:grid hidden">
+                    <p>
+                        HƠN 1250+
+                    </p>
+                    <p>
+                        KHÁCH HÀNG
+                    </p>
+                </div>
+            </div>
+            <div class="flex p-4 hover:border hover:rounded-xl
+                                                border-solid w-1/5
+                                                justify-center
+                                                gap-3">
+                <img src="http://leskin.devmaster.vn/img/icon/home-icon-8.png" class="md:min-h-[54px] md:min-w-[50px] min-h-[100px] min-w-[100px]  md:w-auto w-full" alt="">
+                <div class="md:grid hidden">
+                    <p>
+                        HƠN 25
+                    </p>
+                    <p>
+                        HƠN 25
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="bg-gray-300">
+        <section class="grid container mx-auto p-8">
+            <div class="flex gap-3 md:text-start text-center ">
+                <p class="text-3xl md:text-start text-center">VOUCHER </p>
+                <p class="text-3xl md:text-start text-center text-orange-300">HOT</p>
+            </div>
+        </section>
+        <div class="md:flex grid grid-cols-1 text-center justify-items-center justify-center gap-10 pt-4  pb-8">
+            <div class="grid md:w-3/12 w-1/2 max-h-[350px] md:min-w-[200px] min-w-[340px] border border-solid border-gray-400 rounded-md">
+                <img src="http://leskin.devmaster.vn/img/endow-1.jpg" alt="">
+                <p class="p-3">Xóa nhăn vùng mắt,trán,cau mày,khóe miệng 1 lần duy nhất ....</p>
+                <div class="flex justify-between p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                    <p>05/07/19 - 31/08/19</p>
+                    <p class="flex p-1 pb-1 rounded-xl border border-solid hover:bg-orange-400">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg></p>
+                </div>
+            </div>
+            <div class="grid md:w-3/12 w-1/2 max-h-[350px] md:min-w-[200px]  min-w-[340px] border border-solid border-gray-400 rounded-md">
+                <img src="http://leskin.devmaster.vn/img/endow-2.jpg" alt="">
+                <p class="p-3">Xóa nhăn vùng mắt,trán,cau mày,khóe miệng 1 lần duy nhất ....</p>
+                <div class="flex justify-between p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                    <p>05/07/19 - 31/08/19</p>
+                    <p class="flex p-1 pb-1 rounded-xl border border-solid hover:bg-orange-400">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg></p>
+                </div>
+            </div>
+            <div class="grid md:w-3/12 w-1/2 max-h-[350px] md:min-w-[200px]  min-w-[340px] border border-solid border-gray-400 rounded-md">
+                <img src="http://leskin.devmaster.vn/img/endow-3.jpg" alt="">
+                <p class="p-3">Xóa nhăn vùng mắt,trán,cau mày,khóe miệng 1 lần duy nhất ....</p>
+                <div class="flex justify-between p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                    <p>05/07/19 - 31/08/19</p>
+                    <p class="flex p-1 pb-1 rounded-xl border border-solid hover:bg-orange-400">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <section class="container mx-auto pt-10">
+            <div class="flex gap-3">
+                <p class="text-3xl">COUPON</p>
+                <p class="text-3xl text-orange-300">HOT</p>
+            </div>
+        </section>
+
+        <div class="md:flex grid grid-cols-1 justify-items-center justify-center gap-10 pt-4">
+            <div class="grid md:w-3/12 w-1/2 border border-solid md:min-w-[200px]  min-w-[340px]  border-gray-400 rounded-md pt-6">
+                <img src="http://leskin.devmaster.vn/img/brand-1.jpg" alt="">
+                <p class="p-3">Xóa nhăn vùng mắt,trán,cau mày,khóe miệng 1 lần duy nhất ....</p>
+                <div class="flex justify-between p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                    <p>05/07/19 - 31/08/19</p>
+                    <p class="flex p-1 pb-1 rounded-xl border border-solid hover:bg-orange-400">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg></p>
+                </div>
+            </div>
+            <div class="grid md:w-3/12 w-1/2 md:min-w-[200px]  min-w-[340px]  border border-solid border-gray-400 rounded-md">
+                <img src="http://leskin.devmaster.vn/img/brand-2.jpg" alt="">
+                <p class="p-3">Xóa nhăn vùng mắt,trán,cau mày,khóe miệng 1 lần duy nhất ....</p>
+                <div class="flex justify-between p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                    <p>05/07/19 - 31/08/19</p>
+                    <p class="flex p-1 pb-1 rounded-xl border border-solid hover:bg-orange-400">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg></p>
+                </div>
+            </div>
+            <div class="grid md:w-3/12 w-1/2 md:min-w-[200px]  min-w-[340px]  border border-solid border-gray-400 rounded-md">
+                <img src="http://leskin.devmaster.vn/img/brand-3.jpg" alt="">
+                <p class="p-3">Xóa nhăn vùng mắt,trán,cau mày,khóe miệng 1 lần duy nhất ....</p>
+                <div class="flex justify-between p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                    <p>05/07/19 - 31/08/19</p>
+                    <p class="flex p-1 pb-1 rounded-xl border border-solid hover:bg-orange-400">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg></p>
+                </div>
+            </div>
+        </div>
+        <div class="md:flex grid grid-cols-1 justify-center justify-items-center gap-10 pt-9 pb-10">
+            <div class="grid md:w-3/12 w-1/2 md:min-w-[200px]  min-w-[340px]  border border-solid border-gray-400 rounded-md pt-6">
+                <img src="http://leskin.devmaster.vn/img/brand-4.jpg" alt="">
+                <p class="p-3">Xóa nhăn vùng mắt,trán,cau mày,khóe miệng 1 lần duy nhất ....</p>
+                <div class="flex justify-between p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                    <p>05/07/19 - 31/08/19</p>
+                    <p class="flex p-1 pb-1 rounded-xl border border-solid hover:bg-orange-400">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg></p>
+                </div>
+            </div>
+            <div class="grid md:w-3/12 w-1/2 md:min-w-[200px]  min-w-[340px]  border border-solid border-gray-400 rounded-md">
+                <img src="http://leskin.devmaster.vn/img/brand-5.jpg" alt="">
+                <p class="p-3">Xóa nhăn vùng mắt,trán,cau mày,khóe miệng 1 lần duy nhất ....</p>
+                <div class="flex justify-between p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                    <p>05/07/19 - 31/08/19</p>
+                    <p class="flex p-1 pb-1 rounded-xl border border-solid hover:bg-orange-400">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg></p>
+                </div>
+            </div>
+            <div class="grid md:w-3/12 w-1/2 md:min-w-[200px]  min-w-[340px]  border border-solid border-gray-400 rounded-md">
+                <img src="http://leskin.devmaster.vn/img/brand-6.jpg" alt="">
+                <p class="p-3">Xóa nhăn vùng mắt,trán,cau mày,khóe miệng 1 lần duy nhất ....</p>
+                <div class="flex justify-between p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                    <p>05/07/19 - 31/08/19</p>
+                    <p class="flex p-1 pb-1 rounded-xl border border-solid hover:bg-orange-400">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-orange-400 w-[230px] h-[40px]  rounded-3xl text-center  container mx-auto flex mb-8">
+        <p class="text-2xl  w-[210px] p-1">XEM THÊM</p>
+    </div>
+    <div class="container mx-auto md:flex grid grid-cols-3 justify-items-center gap-8 justify-center border-t-2">
+        <img src="http://leskin.devmaster.vn/img/partner-3.png" class="w-[115px] max-h-[40px] m-3" alt="">
+        <img src="http://leskin.devmaster.vn/img/partner-4.png" class="w-[115px] max-h-[40px] m-3" alt="">
+        <img src="http://leskin.devmaster.vn/img/partner-1.png" class="w-[115px] max-h-[40px] m-3" alt="">
+        <img src="http://leskin.devmaster.vn/img/partner-2.png" class="w-[115px] max-h-[40px] m-3" alt="">
+        <img src="http://leskin.devmaster.vn/img/partner-5.png" class="w-[115px] max-h-[40px] m-3" alt="">
+        <img src="http://leskin.devmaster.vn/img/partner-6.png" class="w-[115px] max-h-[40px] m-3" alt="">
+    </div>
+    <footer class="bg-zinc-900  text-white">
+        <div class="container mx-auto md:flex grid grid-cols-2 justify-between justify-items-center">
+            <div class="grid gap-2 p-2 w-1/4">
+                <p class="text-xl">Liên hệ</p>
+                <div class="flex">
+                    <img src="http://leskin.devmaster.vn/img/icon/loc.png" class="w-2 h-4" alt="">
+                    <p class="text-xs">25 Phố Vũ Ngọc Phan, Láng Hạ, Đống Đa, Hà Nội</p>
+                </div>
+                <div class="flex">
+                    <img src="http://leskin.devmaster.vn/img/icon/phone.png" class="w-2 h-4" alt="">
+                    <p class="text-xs">0960.609.003</p>
+                </div>
+                <div class="flex">
+                    <img src="http://leskin.devmaster.vn/img/icon/email.png" class="w-2 h-4" alt="">
+                    <p class="text-xs">lmthao.dev@gmail.com</p>
+                </div>
+                <div class="flex">
+                    <img src="http://leskin.devmaster.vn/img/icon/web.png" class="w-2 h-4" alt="">
+                    <p class="text-xs">devmaster.edu.vn</p>
+                </div>
+            </div>
+            <div class="grid gap-2 p-2">
+                <p class="text-xl">VỀ LESKIN
+                </p>
+                <div class="grid">
+
+                    <p class="text-xs">VỀ LESKIN</p>
+                    <p class="text-xs">Về chúng tôi</p>
+                    <p class="text-xs">Sứ mệnh</p>
+                    <p class="text-xs">Tăng trưởng</p>
+                    <p class="text-xs">Quan hệ cổ đông</p>
+                </div>
+            </div>
+            <div class="grid gap-2 p-2">
+                <p class="text-xl">TẢI APP NGAY
+                </p>
+                <div class="grid p-5">
+                    <img src="http://leskin.devmaster.vn/img/app-android.jpg" alt="">
+                    <br>
+                    <img src="http://leskin.devmaster.vn/img/app-ios.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid gap-2 p-2">
+                <p class="text-xl">NEWLETTER</p>
+                <p class="text-xs">Đăng ký đển nhận ưu đãi hàng tháng</p>
+                <div>
+                    <input type="email" class="h-[30px] rounded-lg" placeholder="nhập email">
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <script src="leskin.js"></script>
+</body>
